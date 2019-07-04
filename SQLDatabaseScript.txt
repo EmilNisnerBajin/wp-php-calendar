@@ -1,0 +1,12 @@
+create schema wp;
+use wp;
+create table User(id int auto_increment, username varchar(100), password varchar(100), firstname varchar(100), lastname varchar(100), address varchar(100), city varchar(100), country varchar(100), postcode varchar(5), birthday varchar(10),gender varchar(1),email varchar(100), weight varchar(100), height varchar (100), primary key (id));
+create table UserPicture(id int auto_increment, profilePicture varchar(200), userId int, primary key (id), foreign key (userId) references User(id));
+create table Task(id int auto_increment, userId int, name varchar(100), startDate varchar(10), endDate varchar(10), importance varchar(1), repetition bool, time varchar(5), primary key(id), foreign key(userId) references User(id));
+create table Period(id int auto_increment, periodLength	int, menstruationLenght int, menstruationStart varchar(20),
+menstruationEnd varchar(20), userId int, primary key (id), foreign key (userId) references User(id));
+create table expense(idExpense int auto_increment, dateOfExpense varchar(255), essential bool, item varchar(255), amount int, primary key (idExpense));
+create table income(idIncome int auto_increment, dateOfIncome varchar(255), source varchar(255), amount int, primary key(idIncome));
+create table Cardio (idExcerciseC int auto_increment, dateOfCardio varchar(255), time int, primary key(idExcerciseC));
+create table Strength (idExcerciseS int auto_increment, dateOfStrength varchar(255), reps int, primary key(idExcerciseS));
+create table Other (idExcerciseO int auto_increment, dateOfOther varchar(255), time int, primary key(idExcerciseO));

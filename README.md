@@ -1,2 +1,2 @@
-# wp-php-calendar
-Timski projekat iz Web programiranja
+# wp-2019-tim12
+

@@ -1,0 +1,77 @@
+.Task .TaskOptions{
+	display: none;
+	width: 150px;
+	height: 150px;
+}
+
+.Task{
+	width: 150px;
+	height: 150px;
+}
+
+.Day{
+	width: 150px;
+	height: 150px;
+}
+
+.imp1{
+	background-color: rgba(0,255,0,0.7);
+}
+
+.imp2{
+	background-color: rgba(255,255,0,0.7);
+}
+
+.imp3{
+	background-color: rgba(255,0,0,0.7);
+}
+
+.Task:hover .TaskOptions {
+	display: block;
+	padding: 30px;
+}
+
+.Task:hover .TaskOptions .EditOptions{
+   display: block;
+}
+
+.Task:hover .Info{
+	display: none;
+}
+
+.Task .TaskOptions .button {
+   border-top: 1px solid #f024e9;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9c3e99), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #9c3e99, #65a9d7);
+   background: -moz-linear-gradient(top, #9c3e99, #65a9d7);
+   background: -ms-linear-gradient(top, #9c3e99, #65a9d7);
+   background: -o-linear-gradient(top, #9c3e99, #65a9d7);
+   padding: 8px 16px;
+   -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   border-radius: 13px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 10px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.Task .TaskOptions .button:hover {
+   border-top-color: #4d033c;
+   background: #4d033c;
+   color: #ccc;
+   }
+.Task .TaskOptions .button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+body {
+	background-color: PeachPuff;
+	background-size: cover;
+}

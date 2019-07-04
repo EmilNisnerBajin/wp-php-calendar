@@ -1,0 +1,4 @@
+create database finances;
+connect finances;
+create table expense(idExpense int auto_increment, create table expense(idExpense int auto_increment, dateOfExpense varchar(255), essential bool, item varchar(255), amount int, primary key (idExpense) );
+create table income(idIncome int auto_increment, dateOfIncome varchar(255), source varchar(255), amount int, primary key(idIncome));
